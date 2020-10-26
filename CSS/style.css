@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+:root{
+    --background: #000000;
+    --red: #c20000;
+    --blue: #001f70;
+    --gradiente: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    --font: 'Titillium Web', sans-serif;
+}
+body{
+    font-family: var(--font);
+    background-color: var(--background);
+}
+@media screen and (max-width: 1199){
+
+}
+@media screen and (max-width: 767){
+
+}
+@media screen and (max-width: 575){
+
+}
