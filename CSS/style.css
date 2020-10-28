@@ -63,6 +63,48 @@ img{
 #menu-bars{
     display: none;
 }
+.banner{
+    width: 100%;
+    position: relative;
+}
+.banner-position{
+    width: 100%;
+    height: 37.5em;
+    position: absolute;
+    top: 0;
+}
+.banner-content{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.banner-text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.banner-text h1{
+    font-size: 5.62em;
+}
+.banner-text p{
+    font-size: 1.87em;
+}
+.banner-text a{
+    font-size: 1.87em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: var(--red);
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    margin-top: 1em;
+}
 @media screen and (max-width: 74.93em){
 
 }
