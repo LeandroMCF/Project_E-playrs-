@@ -17,6 +17,7 @@ body{
     font-family: var(--font);
     font-size: 16px;
     background-color: var(--background);
+    height: 10000px;
 }
 img{
     width: 100%;
@@ -104,6 +105,14 @@ img{
     padding: 0.5em 1em;
     border-radius: 0.5em;
     margin-top: 1em;
+}
+.jogos{
+    width: 100%;
+    height: 7.5em;
+    padding-top: 0.93em;
+}
+.jogos ul{
+    list-style-type: none;
 }
 @media screen and (max-width: 74.93em){
 
