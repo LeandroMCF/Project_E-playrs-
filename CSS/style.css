@@ -17,7 +17,6 @@ body{
     font-family: var(--font);
     font-size: 16px;
     background-color: var(--background);
-    height: 10000px;
 }
 img{
     width: 100%;
@@ -37,6 +36,7 @@ img{
     align-items: center;
     justify-content: space-between;
 }
+/*topo menu*/
 .topo img{
     max-width: 21.18em;
 }
@@ -64,6 +64,8 @@ img{
 #menu-bars{
     display: none;
 }
+/* Fim topo menu*/
+/*banner*/
 .banner{
     width: 100%;
     position: relative;
@@ -106,6 +108,8 @@ img{
     border-radius: 0.5em;
     margin-top: 1em;
 }
+/*fim banner*/
+/*jogos*/
 .jogos{
     width: 100%;
     height: 7.5em;
@@ -170,6 +174,8 @@ img{
     border: solid 1px #ffffff;
     margin: 0 1em;
 }
+/*Fim jogos*/
+/*partidas*/
 .partidas{
     width: 9.5em;
     display: flex;
@@ -194,12 +200,14 @@ img{
 .time2 img{
     margin-right: 0.5em;
 }
+/*fim partidas*/
+/*noticias*/
 .noticias{
     width: 100%;
     height: 55.125em;
     background-color: #1E1C21;
 }
-#titulo-not{
+.titulo-not{
     width: 100%;
     font-size: 2em;
     color: white;
@@ -221,10 +229,15 @@ img{
     background-color: black;
     margin-right: 4em;
     margin-bottom: 2em;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
 }
 .bloco-noticia img{
     width: 14.81em;
     height: 9.93em;
+    display: flex;
+    border-radius: 0.5em;
 }
 .bloco-noticia h2{
     font-size: 1.125em;
@@ -232,11 +245,13 @@ img{
     color: white;
     display: flex;
     justify-content: center;
+    margin-top: 1em;
+    text-transform: uppercase;
 }
 .bloco-noticia p{
     color: white;
     margin-left: 0.625em;
-    font-family: 'Roboto', sans-serif;
+    font-family: C;
     font-size: 1em;
     margin-top: 1.5em;
 }
@@ -248,7 +263,24 @@ img{
     top: 107.18em;
     left: 90.25em;
     background-color: black;
+    border-radius: 0.5em;
 }
+.partidas-lat{
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 3.25em;
+    padding-right: 2em;
+    padding-bottom: 3.25em;
+}
+.not-lat p{
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.2em;
+}
+/*fim noticias*/
 @media screen and (max-width: 74.93em){
 
 }
