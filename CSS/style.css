@@ -123,9 +123,11 @@ img{
     transition: 0.5s;
     transform: scale(1.1);
 }
+/*Fim jogos*/
+/*sobre*/
 .about{
     width: 100%;
-    height: 31.25em;
+    height: 31.30em;
     background-color: var(--blue);
     position: relative;
 }
@@ -162,6 +164,8 @@ img{
 .about-position img{
     max-width: 31.87em;
 }
+/*fim sobre*/
+/*partidas*/
 .jogos-aovivo, .jogos-embreve{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -174,8 +178,6 @@ img{
     border: solid 1px #ffffff;
     margin: 0 1em;
 }
-/*Fim jogos*/
-/*partidas*/
 .partidas{
     width: 9.5em;
     display: flex;
@@ -260,8 +262,8 @@ img{
     height: 46.93em;
     background-color: white;
     position: absolute;
-    top: 107.18em;
-    left: 90.25em;
+    top: 106.75em;
+    left: 80em;
     background-color: black;
     border-radius: 0.5em;
 }
@@ -286,6 +288,79 @@ footer{
     width: 100%;
     height: 13.125em;
     background-color: black;
+}
+.links{
+    display: flex;
+    justify-content: flex-start;
+}
+.links-uteis{
+    padding-right: 2em;
+}
+.links h2{
+    color: white;
+    font-size: 1.5em;
+    font-family: var(--font);
+    padding-bottom: 1em;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.75em;
+    padding: 0.9em 1em;
+    text-transform: uppercase;
+    font-family: var(--font);
+}
+.links a:hover{
+    text-decoration: underline;
+}
+.logo-rodape{
+    width: 16.56em;
+    height: 1.75em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cadastro{
+    width: 24.18em;
+    height: 4em;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.cadastro p{
+    color: white;
+    font-size: 0.75em;
+    font-family: var(--font);
+    text-transform: uppercase;
+    justify-content: center;
+    margin-right: 1.8em;
+    margin-bottom: 1em;
+}
+.cadastrese a{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: var(--red);
+    padding: 0.2em 0.5em;
+    border-radius: 0.5em;
+}
+.email{
+    display: flex;
+    justify-content: flex-start;
+    width: 11em;
+    height: 2.31em;
+    background-color: white;
+    margin-right: 0.9em;
+}
+.email p{
+    color: #848484;
+    display: flex;
+    padding-top: 0.7em;
+    padding-left: 0.3em;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-family: var(--font);
 }
 /*fim roddape*/
 @media screen and (max-width: 74.93em){
