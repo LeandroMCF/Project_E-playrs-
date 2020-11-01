@@ -209,6 +209,9 @@ img{
     height: 55.125em;
     background-color: #1E1C21;
 }
+.not-geral{
+    width: 100%;
+}
 .titulo-not{
     width: 100%;
     font-size: 2em;
@@ -220,6 +223,7 @@ img{
     align-items: flex-start;
 }
 .cards{
+    width: 56.5em;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -261,11 +265,10 @@ img{
     width: 14.81em;
     height: 46.93em;
     background-color: white;
-    position: absolute;
-    top: 106.75em;
-    left: 80em;
     background-color: black;
     border-radius: 0.5em;
+    padding-top: 0.1em;
+    margin-top: 2.7em;
 }
 .partidas-lat{
     width: 100%;
@@ -345,7 +348,7 @@ footer{
     padding: 0.2em 0.5em;
     border-radius: 0.5em;
 }
-.email{
+.email input{
     display: flex;
     justify-content: flex-start;
     width: 11em;
@@ -356,8 +359,8 @@ footer{
 .email p{
     color: #848484;
     display: flex;
-    padding-top: 0.7em;
-    padding-left: 0.3em;
+    /*padding-top: 0.7em;
+    padding-left: 0.3em;*/
     text-transform: uppercase;
     font-size: 0.75em;
     font-family: var(--font);
