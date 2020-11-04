@@ -26,7 +26,7 @@ img{
     height: 5em;
 }
 .content{
-    width: 80%;
+    width: 95%;
     height: 100%;
     max-width: 75em;
     margin: auto;
@@ -169,12 +169,15 @@ img{
 .jogos-aovivo, .jogos-embreve{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 1.875em;
+    font-size: 1.575em;
     margin-bottom: 0.93em;
 }
-.jogos-aovivo::after{
-    content: '';
-    height: 2.666em;
+.jogos-aovivo h2, .jogos-embreve h2{
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+.linha{
+    height: 4em;
     border: solid 1px #ffffff;
     margin: 0 1em;
 }
@@ -293,6 +296,7 @@ footer{
     background-color: black;
 }
 .links{
+    width: 33%;
     display: flex;
     justify-content: flex-start;
 }
@@ -317,56 +321,54 @@ footer{
     text-decoration: underline;
 }
 .logo-rodape{
-    width: 16.56em;
+    max-width: 33%;
+    width: 33%em;
     height: 1.75em;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.cadastro{
-    width: 24.18em;
-    height: 4em;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-}
-.cadastro p{
-    color: white;
-    font-size: 0.75em;
-    font-family: var(--font);
-    text-transform: uppercase;
-    justify-content: center;
-    margin-right: 1.8em;
-    margin-bottom: 1em;
-}
-.cadastrese a{
-    font-size: 1.5em;
-    text-transform: uppercase;
+
+.sociais{
+    width: 33%;
     color: #ffffff;
-    text-decoration: none;
+}
+.newslatter h2{
+    font-size: 0.875em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+}
+.newslatter form{
+    display: flex;
+}
+.newslatter input[type="email"]{
+    width: 12.5em;
+    height: 2.5em;
+    font-size: 1.1em;
+    padding-left: 1em;
+}
+.newslatter input[type="email"]::placeholder{
+    color: rgb(102, 102, 102);
+    font-weight: bold;
+}
+.newslatter input[type="button"]{
+    width: 9.75em;
+    height: 2.5em;
+    font-size: 1.1em;
+    padding-left: 1em;
+    color: #ffffff;
     background-color: var(--red);
-    padding: 0.2em 0.5em;
-    border-radius: 0.5em;
-}
-.email input{
-    display: flex;
-    justify-content: flex-start;
-    width: 11em;
-    height: 2.31em;
-    background-color: white;
-    margin-right: 0.9em;
-}
-.email p{
-    color: #848484;
-    display: flex;
-    /*padding-top: 0.7em;
-    padding-left: 0.3em;*/
     text-transform: uppercase;
-    font-size: 0.75em;
-    font-family: var(--font);
 }
-/*fim roddape*/
+.siga-nos{
+    padding-top: 1em;
+}
+/*fim rodape*/
 @media screen and (max-width: 74.93em){
+
+}
+@media screen and (max-width:61.9375em){
 
 }
 @media screen and (max-width: 47.93em){
