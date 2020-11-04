@@ -156,10 +156,13 @@ img{
 .about-text h2{
     font-size: 2.18em;
     margin-bottom: 0.5em;
+    display: flex;
+    justify-content: center;
 }
 .about-text p{
     font-size: 1.125em;
     margin-bottom: 1em;
+    text-align: justify;
 }
 .about-position img{
     max-width: 31.87em;
@@ -356,7 +359,6 @@ footer{
     width: 9.75em;
     height: 2.5em;
     font-size: 1.1em;
-    padding-left: 1em;
     color: #ffffff;
     background-color: var(--red);
     text-transform: uppercase;
@@ -365,14 +367,281 @@ footer{
     padding-top: 1em;
 }
 /*fim rodape*/
-@media screen and (max-width: 74.93em){
 
+
+
+
+
+/*responsivo*/
+@media screen and (max-width: 88.7em){
+    /*topo*/
+    .topo img{
+        max-width: 21.18em;
+    }
+    .menu{
+        width: 100%;
+        max-width: 50em;
+    }
+    .menu ul{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .menu a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+        padding: 1.6em 0.5em;
+        text-transform: uppercase;
+    }
+    #menu-bars{
+        display: none;
+    }
+    /*fim topo*/
+    /*Jogos*/
+    .jogos img{
+        margin-top: 0.5em;
+        max-width: 10em;
+    }
+    /*fim jogos/*
+    /*banner*/
+    .banner-content{
+        width: 80%;
+        height: 75%;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .banner-text h1{
+        font-size: 4em;
+    }
+    .banner-text p{
+        font-size: 1.5em;
+    }
+    .banner-text a{
+        font-size: 1.5em;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-decoration: none;
+        background-color: var(--red);
+        padding: 0.5em 1em;
+        border-radius: 0.5em;
+        margin-top: 1em;    
+    }
+    /*fim banner*/
+    /*sobre*/
+    .about-text{
+        width: 50%;
+        color: white;
+    }
+    .about-text h2{
+        font-size: 1.7em;
+        margin-bottom: 0.5em;
+        color: var(--red);
+        display: flex;
+        justify-content: center;
+    }
+    .about-text p{
+        font-size: 1em;
+        margin-bottom: 1em;
+        text-align: justify;
+    }
+    .about-position img{
+        max-width: 25em;
+        display: flex;
+    }
+    /*fim sobre*/
 }
-@media screen and (max-width:61.9375em){
-
+@media screen and (max-width:63.4em){
+    /*topo*/
+    .topo img{
+        max-width: 21.18em;
+    }
+    .menu{
+        width: 100%;
+        max-width: 50em;
+    }
+    .menu ul{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .menu a{
+        text-decoration: none;
+        color: white;
+        font-size: 1em;
+        padding: 1.7em 1em;
+        text-transform: uppercase;
+    }
+    #menu-bars{
+        display: none;
+    }
+    /*fim topo*/
+    /*Jogos*/
+    .jogos img{
+        margin-top: 0.7em;
+        max-width: 8.5em;
+    }
+    /*fim jogos*/
+    .banner-content{
+        width: 80%;
+        height: 64%;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .banner-text h1{
+        font-size: 3em;
+    }
+    .banner-text p{
+        font-size: 1em;
+    }
+    .banner-text a{
+        font-size: 1em;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-decoration: none;
+        background-color: var(--red);
+        padding: 0.5em 1em;
+        border-radius: 0.5em;
+        margin-top: 1em;    
+    }
+    /*about*/
+    .about-text{
+        width: 50%;
+        color: white;
+    }
+    .about-text h2{
+        font-size: 1.7em;
+        margin-bottom: 0.5em;
+        color: blue;
+        display: flex;
+        justify-content: center;
+    }
+    .about-text p{
+        font-size: 1em;
+        margin-bottom: 1em;
+        text-align: justify;
+    }
+    .about-position img{
+        max-width: 20em;
+        display: flex;
+    }
+    /*fim about*/
 }
 @media screen and (max-width: 47.93em){
-
+    /*Jogos*/
+    .jogos img{
+        max-width: 7em;
+    }
+    /*fim jogos*/
+    .banner-content{
+        width: 80%;
+        height: 54%;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .banner-text h1{
+        font-size: 2.5em;
+    }
+    .banner-text p{
+        font-size: 0.9em;
+    }
+    .banner-text a{
+        font-size: 0.9em;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-decoration: none;
+        background-color: var(--red);
+        padding: 0.5em 1em;
+        border-radius: 0.5em;
+        margin-top: 1em;
+    }
+    /*about*/
+    .about-text{
+        width: 50%;
+        color: white;
+    }
+    .about-text h2{
+        font-size: 1em;
+        margin-bottom: 0.5em;
+        color: pink;
+        display: flex;
+        justify-content: center;
+    }
+    .about-text p{
+        font-size: 1em;
+        margin-bottom: 1em;
+        text-align: justify;
+    }
+    .about-position img{
+        max-width: 15em;
+        display: flex;
+    }
+    /*fim about*/
 }
-@media screen and (max-width: 35.93em){
+@media screen and (max-width: 39.9em){
+    /*Jogos*/
+    .jogos img{
+        margin-top: 1em;
+        max-width: 6em;
+    }
+    /*fim jogos*/
+    .banner-content{
+        width: 80%;
+        height: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .banner-text h1{
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+    }
+    .banner-text p{
+        font-size: 0.9em;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-text a{
+        font-size: 0.9em;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-decoration: none;
+        background-color: var(--red);
+        padding: 0.5em 1em;
+        border-radius: 0.5em;
+        margin-top: 1em;    
+    }
+    /*about*/
+    .about-text{
+        width: 100%;
+        color: white;
+    }
+    .about-text h2{
+        font-size: 1em;
+        margin-bottom: 0.5em;
+        color: blue;
+        display: flex;
+        justify-content: center;
+    }
+    .about-position{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-text p{
+        font-size: 0.8em;
+        margin-bottom: 1em;
+    }
+    .about-position img{
+        max-width: 15em;
+        display: flex;
+        flex-direction: row;
+    }
+    /*fim about*/
 }
