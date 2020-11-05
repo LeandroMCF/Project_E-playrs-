@@ -77,7 +77,7 @@
         <!--fim sobre-->
         <!--partidas-->
         <section class="jogos">
-            <div class="content flex-center-bt">
+            <div class="content flex-center-bt partidas-config">
                 <div class="jogos-aovivo flex-center-bt">
                     <h2>Ao <br>Vivo</h2>
                     <div class="partidas">
@@ -125,41 +125,41 @@
         <section class="noticias">
             <div class="content flex-center-bt">
                 <div class="not-geral">
-                <div class="cards">
-                    <h2 class="titulo-not">Notícias</h2>
-                    <div class="bloco-noticia">
-                        <img src="images/T1 1.png" alt="Imagem da jogadora Isadora">
-                        <h2>Título da notícia</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae minima voluptatum     incidunt esse libero, earum ipsa sed animi totam mollitia placeat aliquam </p>
-                    </div>
-                    <div class="bloco-noticia">
-                        <img src="images/T1 2.png" alt="Imagem da jogadora Isadora">
-                        <h2>Título da notícia</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae minima voluptatum     incidunt esse libero, earum ipsa sed animi totam mollitia placeat aliquam </p>
-                    </div>
-                    <div class="bloco-noticia">
-                        <img src="images/T1 3.png" alt="Imagem da jogadora Isadora">
-                        <h2>Título da notícia</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae minima voluptatum incidunt esse libero, earum ipsa sed animi totam mollitia placeat aliquam </p>
-                    </div>
-                    <div class="bloco-noticia">
-                        <img src="images/T1 4.png" alt="Imagem da jogadora Isadora">
-                        <h2>Título da notícia</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae minima voluptatum incidunt esse libero, earum ipsa sed animi totam mollitia placeat aliquam </p>
-                    </div>
-                    <div class="bloco-noticia">
-                        <img src="images/T1 5.png" alt="Imagem da jogadora Isadora">
-                        <h2>Título da notícia</h2>
+                    <div class="cards">
+                        <h2 class="titulo-not">Notícias</h2>
+                        <div class="bloco-noticia">
+                            <img src="images/T1 1.png" alt="Imagem da jogadora Isadora">
+                            <h2>Título da notícia</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae minima voluptatum     incidunt esse libero, earum ipsa sed animi totam mollitia placeat aliquam </p>
+                        </div>
+                        <div class="bloco-noticia">
+                            <img src="images/T1 2.png" alt="Imagem da jogadora Isadora">
+                            <h2>Título da notícia</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae minima voluptatum     incidunt esse libero, earum ipsa sed animi totam mollitia placeat aliquam </p>
+                        </div>
+                        <div class="bloco-noticia">
+                            <img src="images/T1 3.png" alt="Imagem da jogadora Isadora">
+                            <h2>Título da notícia</h2>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae minima voluptatum incidunt esse libero, earum ipsa sed animi totam mollitia placeat aliquam </p>
-                    </div>
-                    <div class="bloco-noticia">
-                        <img src="images/T1 6.png" alt="Imagem da jogadora Isadora">
-                        <h2>Título da notícia</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae minima voluptatum incidunt esse libero, earum ipsa sed animi totam mollitia placeat aliquam </p>
+                        </div>
+                        <div class="bloco-noticia">
+                            <img src="images/T1 4.png" alt="Imagem da jogadora Isadora">
+                            <h2>Título da notícia</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae minima voluptatum incidunt esse libero, earum ipsa sed animi totam mollitia placeat aliquam </p>
+                        </div>
+                        <div class="bloco-noticia">
+                            <img src="images/T1 5.png" alt="Imagem da jogadora Isadora">
+                            <h2>Título da notícia</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae minima voluptatum incidunt esse libero, earum ipsa sed animi totam mollitia placeat aliquam </p>
+                        </div>
+                        <div class="bloco-noticia">
+                            <img src="images/T1 6.png" alt="Imagem da jogadora Isadora">
+                            <h2>Título da notícia</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae minima voluptatum incidunt esse libero, earum ipsa sed animi totam mollitia placeat aliquam </p>
+                        </div>
                     </div>
                 </div>
                 <!--fim bloco noticias-->
-            </div>
             <aside>
                 <div class="not-lat">
                     <div class="partidas partidas-lat">
@@ -229,7 +229,7 @@
                         <li><a href="#">contato</a></li>
                     </ul>
                 </nav>
-                <nav class="Páginas">
+                <nav class="links-uteis">
                     <h2>Páginas</h2>
                     <ul class="Páginas">
                         <li><a href="#">Início</a></li>
@@ -264,9 +264,19 @@
             var ulDoMenu = document.getElementById("meusLinks");
             if (ulDoMenu.style.display === "flex") {
                 ulDoMenu.style.display = "none";
-            } else {
-                ulDoMenu.style.display = "flex";
             }
+            if (ulDoMenu.style.display === "none") {
+                ulDoMenu.style.display = "flex"
+            } 
+            else {
+                ulDoMenu.style.display = "flex";
+            } 
+        }
+        function meuLink() {
+            var ulDoMenu = document.getElementById("meusLinks");
+            if (ulDoMenu.style.display === "none") {
+                ulDoMenu.style.display = "flex"
+            } 
         }
     </script>
 </body>

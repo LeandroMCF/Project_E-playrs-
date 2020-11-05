@@ -288,7 +288,7 @@ img{
     width: 100%;
     justify-content: space-around;
     margin-top: 3.25em;
-    padding-right: 2em;
+    padding-right: 6em;
     padding-bottom: 3.25em;
 }
 .not-lat p{
@@ -382,6 +382,7 @@ footer{
 
 /*responsivo*/
 @media screen and (max-width: 88.7em){
+    /*menu*/
     .ajuste-menu{
         display: flex;
         justify-content: flex-end;
@@ -417,6 +418,7 @@ footer{
         z-index: 99;
         background-color: red;
     }
+    /*fim menu*/
     /*topo*/
     .topo img{
         max-width: 21.18em;
@@ -432,11 +434,8 @@ footer{
         justify-content: space-around;
     }
     .menu a{
-        text-decoration: none;
-        color: white;
         font-size: 1.2em;
         padding: 1.6em 0.5em;
-        text-transform: uppercase;
     }
     #menu-bars{
         display: none;
@@ -446,6 +445,10 @@ footer{
     .jogos img{
         margin-top: 0.5em;
         max-width: 10em;
+    }
+    .jogos ul a:hover img{
+        transition: 0.5s;
+        transform: scale(1.1);
     }
     /*fim jogos/*
     /*banner*/
@@ -464,10 +467,6 @@ footer{
     }
     .banner-text a{
         font-size: 1.5em;
-        text-transform: uppercase;
-        color: #ffffff;
-        text-decoration: none;
-        background-color: var(--red);
         padding: 0.5em 1em;
         border-radius: 0.5em;
         margin-top: 1em;    
@@ -476,26 +475,104 @@ footer{
     /*sobre*/
     .about-text{
         width: 50%;
-        color: white;
     }
     .about-text h2{
         font-size: 1.7em;
         margin-bottom: 0.5em;
-        color: var(--red);
-        display: flex;
-        justify-content: center;
     }
     .about-text p{
         font-size: 1em;
         margin-bottom: 1em;
-        text-align: justify;
     }
     .about-position img{
         max-width: 25em;
-        display: flex;
     }
     /*fim sobre*/
+    /*jogos*/
+    .partidas-config{
+        width: 50%;
+    }
+    .jogos-aovivo h2, .jogos-embreve h2{
+        font-size: 1.2em;
+        text-transform: uppercase;
+    }
+    .partidas img{
+        max-width: 1.8em;
+    }
+    /*fim jogos*/
+    /*noticias*/
+
+    .titulo-not{
+        width: 100%;
+        font-size: 1.5em;
+    }
+    .cards{
+        width: 36em;
+    }
+    .bloco-noticia{
+        width: 14em;
+        height: 16em;
+    }
+    .bloco-noticia img{
+        width: 14em;
+        height: 9em;
+    }
+    .bloco-noticia h2{
+        font-size: 0.8em;
+        margin-top: 1em;
+    }
+    .bloco-noticia p{
+        font-size: 0.8em;
+        margin-top: 1.5em;
+    }
+    /*fim noticias*/
+    /*rodapé*/
+    .links-uteis{
+        padding-right: 1em;
+    }
+    .links h2{
+        font-size: 1em;
+    }
+    .links a{
+        text-decoration: none;
+        color: white;
+        font-size: 0.6em;
+        padding: 0.9em 1em;
+        text-transform: uppercase;
+        font-family: var(--font);
+    }
+    .logo-rodape{
+        height: 1em;
+    }
+    .newslatter h2{
+        font-size: 0.75em;
+        margin-bottom: 1em;
+    }
+    .newslatter input[type="email"]{
+        width: 10em;
+        height: 2.5em;
+        font-size: 1em;
+        padding-left: 1em;
+    }
+    .newslatter input[type="button"]{
+        width: 9.75em;
+        height: 2.5em;
+        font-size: 1em;
+    }
+    .siga-nos{
+        font-size: 0.79em;
+        padding-top: 1em;
+    }
+    .siga-nos img{
+        width: 3em;
+    }
+    /*fim rodape*/
 }
+
+
+
+
+
 @media screen and (max-width:63.4em){
     /*topo*/
     .topo img{
@@ -526,6 +603,10 @@ footer{
     .jogos img{
         margin-top: 0.7em;
         max-width: 8.5em;
+    }
+    .jogos ul a:hover img{
+        transition: 0.5s;
+        transform: scale(1.1);
     }
     /*fim jogos*/
     .banner-content{
@@ -573,7 +654,77 @@ footer{
         display: flex;
     }
     /*fim about*/
+    /*jogos*/
+    .partidas-config{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .jogos-aovivo, .jogos-embreve{
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 1em;
+        margin-bottom: 0.93em;
+        display: flex;
+        justify-content: space-between;
+    }
+    .jogos-aovivo h2, .jogos-embreve h2{
+        font-size: 1.2em;
+        text-transform: uppercase;
+    }
+    .partidas img{
+        max-width: 1.8em;
+    }
+    /*fim jogos*/
+    /*rodapé*/
+    .links-uteis{
+        padding-right: 1em;
+    }
+    .links h2{
+        font-size: 1em;
+    }
+    .links a{
+        text-decoration: none;
+        color: white;
+        font-size: 0.6em;
+        padding: 0.9em 1em;
+        text-transform: uppercase;
+        font-family: var(--font);
+    }
+    .logo-rodape{
+        height: 1em;
+    }
+    .newslatter h2{
+        font-size: 0.75em;
+        margin-bottom: 1em;
+    }
+    .newslatter input[type="email"]{
+        width: 10em;
+        height: 2.5em;
+        font-size: 1em;
+        padding-left: 1em;
+    }
+    .newslatter input[type="button"]{
+        width: 9.75em;
+        height: 2.5em;
+        font-size: 1em;
+    }
+    .siga-nos{
+        font-size: 0.79em;
+        padding-top: 1em;
+    }
+    .siga-nos img{
+        width: 3em;
+    }
+    /*fim rodape*/
 }
+
+
+
+
+
+
+
 @media screen and (max-width: 47.93em){
     .btnMenu{
         display: block;
@@ -599,6 +750,10 @@ footer{
     /*Jogos*/
     .jogos img{
         max-width: 7em;
+    }
+    .jogos ul a:hover img{
+        transition: 0.5s;
+        transform: scale(1.1);
     }
     /*fim jogos*/
     .banner-content{
@@ -664,7 +819,77 @@ footer{
         padding-bottom: 2em;
     }
     /*fim about*/
+    /*jogos*/
+    .partidas-config{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .jogos-aovivo, .jogos-embreve{
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 0.89em;
+        margin-bottom: 0.93em;
+        display: flex;
+        justify-content: space-between;
+    }
+    .jogos-aovivo h2, .jogos-embreve h2{
+        font-size: 1.2em;
+        text-transform: uppercase;
+    }
+    .partidas img{
+        max-width: 1.8em;
+    }
+    /*fim jogos*/
+    /*rodapé*/
+    .links-uteis{
+        padding-right: 0.5em;
+    }
+    .links h2{
+        font-size: 1em;
+    }
+    .links a{
+        text-decoration: none;
+        color: white;
+        font-size: 0.6em;
+        padding: 0.9em 1em;
+        text-transform: uppercase;
+        font-family: var(--font);
+    }
+    .logo-rodape{
+        height: 1em;
+    }
+    .newslatter h2{
+        font-size: 0.75em;
+        margin-bottom: 1em;
+    }
+    .newslatter input[type="email"]{
+        width: 10em;
+        height: 2.5em;
+        font-size: 1em;
+        padding-left: 01em;
+    }
+    .newslatter input[type="button"]{
+        width: 9.75em;
+        height: 2.5em;
+        font-size: 1em;
+    }
+    .siga-nos{
+        font-size: 0.79em;
+        padding-top: 1em;
+    }
+    .siga-nos img{
+        width: 3em;
+    }
+    /*fim rodape*/
 }
+
+
+
+
+
+
+
 @media screen and (max-width: 39.9em){
     /*banner*/
     .banner-content{
@@ -700,6 +925,10 @@ footer{
     .jogos img{
         margin-top: 1em;
         max-width: 5em;
+    }
+    .jogos ul a:hover img{
+        transition: 0.5s;
+        transform: scale(1.1);
     }
     /*fim jogos*/
     /*about*/
@@ -739,4 +968,68 @@ footer{
         margin-bottom: 1em;
     }
     /*fim about*/
+    /*jogos*/
+    .partidas-config{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .jogos-aovivo, .jogos-embreve{
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 0.7em;
+        margin-bottom: 0.93em;
+        display: flex;
+        justify-content: space-between;
+    }
+    .jogos-aovivo h2, .jogos-embreve h2{
+        font-size: 1.2em;
+        text-transform: uppercase;
+    }
+    .partidas img{
+        max-width: 1.8em;
+    }
+    /*fim jogos*/
+    /*rodapé*/
+    .links-uteis{
+        padding-right: 0.1em;
+    }
+    .links h2{
+        font-size: 0.8em;
+    }
+    .links a{
+        text-decoration: none;
+        color: white;
+        font-size: 0.48em;
+        padding: 0.9em 1em;
+        text-transform: uppercase;
+        font-family: var(--font);
+    }
+    .logo-rodape{
+        height: 1em;
+    }
+    .newslatter h2{
+        font-size: 0.5em;
+        margin-bottom: 1em;
+        display: none;
+    }
+    .newslatter input[type="email"]{
+        width: 10em;
+        height: 2.5em;
+        font-size: 1em;
+        padding-left: 1em;
+        display: none;
+    }
+    .newslatter input[type="button"]{
+        display: none;
+    }
+    .siga-nos{
+        font-size: 0.6em;
+        display: flex;
+        flex-direction: column;
+    }
+    .siga-nos img{
+        width: 3em;
+    }
+    /*fim rodape*/
 }
