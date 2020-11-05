@@ -42,6 +42,9 @@ img{
 
 
 /*topo menu*/
+.btnMenu{
+    display: none;
+}
 .topo img{
     max-width: 21.18em;
 }
@@ -379,6 +382,10 @@ footer{
 
 /*responsivo*/
 @media screen and (max-width: 88.7em){
+    .ajuste-menu{
+        display: flex;
+        justify-content: flex-end;
+    }
     .btnMenu{
         display: block;
         width: 4em;
