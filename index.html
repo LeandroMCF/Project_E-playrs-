@@ -13,13 +13,13 @@
         <div class="content flex-center-bt">
             <a href="index.html"><img src="images/Logo_Branco 1.svg" alt="Logo e-players"></a>
             <nav class="menu"> 
-                <ul>
+                <ul id="meusLinks" class="bars">
                     <li><a href="#">Campeonatos</a></li>
                     <li><a href="#">Resultados</a></li>
                     <li><a href="#">Noticias</a></li>
                     <li><a href="#">Login/Cadastro</a></li>
                 </ul>
-                <a href="#" id="menu-bars">
+                <a class="btnMenu" onclick="meuMenu()">
                     <i class="fas fa-bars"></i>
                 </a>
             </nav>
@@ -257,5 +257,15 @@
         </div>
     </footer>
     <!--Fim rodapé-->
+    <script>
+        function meuMenu() {
+            var ulDoMenu = document.getElementById("meusLinks");
+            if (ulDoMenu.style.display === "flex") {
+                ulDoMenu.style.display = "none";
+            } else {
+                ulDoMenu.style.display = "flex";
+            }
+        }
+    </script>
 </body>
 </html>
