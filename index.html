@@ -19,7 +19,7 @@
                     <li><a href="#">Noticias</a></li>
                     <li><a href="#">Login/Cadastro</a></li>
                 </ul>
-                <div class="ajuste-menu">
+                <div id="meuMenu" class="ajuste-menu">
                     <a class="btnMenu" onclick="meuMenu()">
                         <i class="fas fa-bars"></i>
                     </a>
@@ -92,32 +92,32 @@
                         </div>
                     </div>
                 </div><!--fim ao vivo-->
-            <div class="jogos-embreve flex-center-bt">
-                <div class="linha"></div>
-                <h2>Em <br>breve</h2>
-                <div class="partidas">
-                    <div class="time1">
-                        <p>SK</p>
-                        <img src="images/SK 1.png" alt="Logo SK games">
+                <div class="jogos-embreve flex-center-bt">
+                    <div class="linha"></div>
+                    <h2>Em <br>breve</h2>
+                    <div class="partidas">
+                        <div class="time1">
+                            <p>SK</p>
+                            <img src="images/SK 1.png" alt="Logo SK games">
+                        </div>
+                        <p>VS</p>
+                        <div class="time2">
+                            <img src="images/FLA 1.png" alt="Logoflamengo"> 
+                            <p>ct</p>
+                        </div>
                     </div>
-                    <p>VS</p>
-                    <div class="time2">
-                        <img src="images/FLA 1.png" alt="Logoflamengo"> 
-                        <p>ct</p>
+                    <div class="partidas">
+                        <div class="time1">
+                            <p>SK</p>
+                            <img src="images/SK 1.png" alt="Logo SK games">
+                        </div>
+                        <p>VS</p>
+                        <div class="time2">
+                            <img src="images/FLA 1.png" alt="Logoflamengo"> 
+                            <p>ct</p>
+                        </div>
                     </div>
                 </div>
-                <div class="partidas">
-                    <div class="time1">
-                        <p>SK</p>
-                        <img src="images/SK 1.png" alt="Logo SK games">
-                    </div>
-                    <p>VS</p>
-                    <div class="time2">
-                        <img src="images/FLA 1.png" alt="Logoflamengo"> 
-                        <p>ct</p>
-                    </div>
-                </div>
-            </div>
             </div>
         </section>
         <!--fim partidas-->
@@ -261,21 +261,14 @@
     <!--Fim rodapé-->
     <script>
         function meuMenu() {
-            var ulDoMenu = document.getElementById("meusLinks");
-            if (ulDoMenu.style.display === "flex") {
-                ulDoMenu.style.display = "none";
-            }
-            if (ulDoMenu.style.display === "none") {
-                ulDoMenu.style.display = "flex"
-            } 
-            else {
-                ulDoMenu.style.display = "flex";
-            } 
-        }
-        function meuLink() {
-            var ulDoMenu = document.getElementById("meusLinks");
-            if (ulDoMenu.style.display === "none") {
-                ulDoMenu.style.display = "flex"
+            var Links = document.getElementById("meusLinks");
+            var Menu = document.getElementById("meuMenu");
+            
+            if (Links.style.display === "flex") {
+                Links.style.display = "none";
+                Menu.style.display = "flex";
+            }  else {
+                Links.style.display = "flex";   
             } 
         }
     </script>

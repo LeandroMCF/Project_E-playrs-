@@ -382,64 +382,6 @@ footer{
 
 /*responsivo*/
 @media screen and (max-width: 88.7em){
-    /*menu*/
-    .ajuste-menu{
-        display: flex;
-        justify-content: flex-end;
-    }
-    .btnMenu{
-        display: block;
-        width: 4em;
-        height: 4em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #meusLinks{
-        display: none;
-    }
-    .menu ul{
-        max-width: 100%;
-        width: 100%;
-        flex-direction: column;
-        height: 350px;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #000000;
-    }
-    .bars{
-        width: 300px;
-        height: 300px;
-        flex-direction: column;
-        top: 60px;
-        left: 0;
-        position: absolute;
-        z-index: 99;
-        background-color: red;
-    }
-    /*fim menu*/
-    /*topo*/
-    .topo img{
-        max-width: 21.18em;
-    }
-    .menu{
-        width: 100%;
-        max-width: 50em;
-    }
-    .menu ul{
-        list-style-type: none;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .menu a{
-        font-size: 1.2em;
-        padding: 1.6em 0.5em;
-    }
-    #menu-bars{
-        display: none;
-    }
     /*fim topo*/
     /*Jogos*/
     .jogos img{
@@ -574,6 +516,64 @@ footer{
 
 
 @media screen and (max-width:63.4em){
+    /*menu*/
+    .ajuste-menu{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .btnMenu{
+        display: block;
+        width: 4em;
+        height: 4em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #meusLinks{
+        display: none;
+    }
+    #meusLinks{
+        max-width: 100%;
+        width: 100%;
+        flex-direction: column;
+        height: 350px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #000000;
+    }
+    .bars{
+        width: 300px;
+        height: 300px;
+        flex-direction: column;
+        top: 60px;
+        left: 0;
+        position: absolute;
+        z-index: 99;
+        background-color: red;
+    }
+    /*fim menu*/
+    /*topo*/
+    .topo img{
+        max-width: 21.18em;
+    }
+    .menu{
+        width: 100%;
+        max-width: 50em;
+    }
+    .menu ul{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .menu a{
+        font-size: 1.2em;
+        padding: 1.6em 0.5em;
+    }
+    #menu-bars{
+        display: none;
+    }
     /*topo*/
     .topo img{
         max-width: 21.18em;
@@ -824,14 +824,21 @@ footer{
         width: 50%;
         display: flex;
         justify-content: center;
+        flex-direction: column;
+    }
+    .linha{
+        display: none;
     }
     .jogos-aovivo, .jogos-embreve{
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
-        font-size: 0.89em;
+        font-size: 1em;
         margin-bottom: 0.93em;
         display: flex;
         justify-content: space-between;
+    }
+    .jogos-aovivo{
+        padding-right: 13.5em;
     }
     .jogos-aovivo h2, .jogos-embreve h2{
         font-size: 1.2em;
@@ -841,6 +848,19 @@ footer{
         max-width: 1.8em;
     }
     /*fim jogos*/
+    /*Notícias*/
+    .not-lat{
+        display: none;
+    }
+    .titulo-not{
+        font-size: 1em;
+        padding-top: 2em;
+    }
+    .cards{
+        width: 53em;
+        padding-left: 3em;
+    }
+    /*fim notícias*/
     /*rodapé*/
     .links-uteis{
         padding-right: 0.5em;
@@ -864,15 +884,15 @@ footer{
         margin-bottom: 1em;
     }
     .newslatter input[type="email"]{
-        width: 10em;
+        width: 9em;
         height: 2.5em;
-        font-size: 1em;
+        font-size: 0.9em;
         padding-left: 01em;
     }
     .newslatter input[type="button"]{
-        width: 9.75em;
+        width: 8em;
         height: 2.5em;
-        font-size: 1em;
+        font-size: 0.9em;
     }
     .siga-nos{
         font-size: 0.79em;
@@ -991,9 +1011,6 @@ footer{
     }
     /*fim jogos*/
     /*rodapé*/
-    .links-uteis{
-        padding-right: 0.1em;
-    }
     .links h2{
         font-size: 0.8em;
     }
