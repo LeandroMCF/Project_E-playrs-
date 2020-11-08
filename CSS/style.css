@@ -1012,18 +1012,15 @@ footer{
     /*fim jogos*/
     /*rodapé*/
     .links h2{
-        font-size: 0.8em;
+        display: none;
     }
     .links a{
-        text-decoration: none;
-        color: white;
-        font-size: 0.48em;
-        padding: 0.9em 1em;
-        text-transform: uppercase;
-        font-family: var(--font);
+        display: none;
     }
     .logo-rodape{
         height: 1em;
+        display: flex;
+        justify-content: flex-start;
     }
     .newslatter h2{
         font-size: 0.5em;
